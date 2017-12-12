@@ -1,6 +1,6 @@
 # TSQL Changes
 
-## STRING_SPLIT
+### STRING_SPLIT
 
 This is a table-valued function and converts a delimited string into a single column table.
 
