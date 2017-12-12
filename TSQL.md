@@ -28,6 +28,8 @@ This is a scalar function and escapes special characters in an input string.
 * **input**:     string, type (As of SQL Server 2016, the only supported value for type is 'json')
 * **output**:    string with escaped special characters
 
+` SELECT STRING_ESCAPE('a\bc/de"f','JSON') AS escaped_input; `
+
 List of characters that can be escaped can be found here https://docs.microsoft.com/en-us/sql/t-sql/functions/string-escape-transact-sql
 
 
@@ -40,6 +42,4 @@ Concatenates a variable number of arguments with a delimiter specified in the 1s
 
 Note: Null values are ignored during concatenation, and does not add the separator. 
 
-```
-SELECT CONCAT_WS(',','Adress line 1', NULL, NULL, 'Boston', 'MA', 12345) AS Address;
-```
+` SELECT CONCAT_WS(',','Adress line 1', NULL, NULL, 'Boston', 'MA', 12345) AS Address; `
